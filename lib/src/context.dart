@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 extension ContextExt on BuildContext {
-  double phoneHeight() => MediaQuery.of(this).size.height;
-  double phoneWidth() => MediaQuery.of(this).size.width;
+  double deviceHeight() => MediaQuery.of(this).size.height;
+  double deviceWidth() => MediaQuery.of(this).size.width;
 
   void push(Widget widget) {
     Navigator.of(this).push(MaterialPageRoute(builder: (context) => widget));
